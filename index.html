@@ -21,8 +21,8 @@
 
     <p><strong> My name is: {{name}} </strong></p>
 
-    <div ng-repeat="friend in listOfFriends">
-      {{friend}}
+    <div ng-repeat="friend in listOfFriends track by $index">
+      <p id="colorchange">{{friend}}</p>
     </div>
 
     <!-- <button id="special" ng-click="alldesefriends">
@@ -40,7 +40,27 @@
     One of my friend is: {{alldesefriends}}
   </div>
 </div>
+
+
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Enter New Friend:</button>
+      </span>
+
+      <form>
+        <input type="text" ng-model="anotherFriend">  </input>
+        <button ng-model="whatever" ng-click="addFriend(anotherFriend)">
+
+        </button>
+
+
+      </form>
 </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 

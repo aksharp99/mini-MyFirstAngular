@@ -35,3 +35,12 @@ span {
 button + div {
   color:rgb(64,224,208);
 }
+
+#colorchange {
+  color:lightsalmon;
+  font-size: 30px;
+}
+
+input {
+  height: 34px;
+}

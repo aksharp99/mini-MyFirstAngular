@@ -9,9 +9,15 @@ angular.module('friendsList').controller('mainCtrl', function($scope) {
 
     var i = Math.floor(Math.random() * $scope.listOfFriends.length);
 
-    $scope.alldesefriends = $scope.listOfFriends[i];
+  $scope.alldesefriends = $scope.listOfFriends[i];
 
 
-  })
+
+})
+  $scope.addFriend = function(anotherFriend) {
+    console.log(anotherFriend);
+    return $scope.listOfFriends.push(anotherFriend);
+
+  }
 
 })
